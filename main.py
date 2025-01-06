@@ -11,8 +11,13 @@ def index():
     result = None
     if request.method == 'POST':
         try:
-            input_wallet = float(request.form['input_wallet'])
             result = random.randint(1,10)
+            if result in range(1,5):
+                result = 'Bearish'
+            elif result in range(5,8):
+                result = 'Neutral'
+            else:
+                result = 'Bullish'
         except ValueError:
             result = "Please enter valid numbers."
     return render_template('index.html', result=result)
