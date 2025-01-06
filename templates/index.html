@@ -34,10 +34,6 @@
                 <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo" class="logo-image">
                 Kiria AI
             </h1>
-            <div class="header-search">
-                <input type="text" placeholder="Search...">
-                <button type="button">Search</button>
-            </div>
             <div>
                 <a href="{{ url_for('static', filename='papers/Paper - Kiria (1).pdf') }}" class="btn btn-outline-light me-2">Paper</a>
                 <a href="https://x.com/KiriaAI_" target="_blank" class="btn btn-outline-light">Twitter</a>
@@ -149,11 +145,10 @@
     </section>
 
     <section id="calculator">
-        <h2>Calculator</h2>
+        <h2>Token Risk Analyzer</h2>
         <form action="{{ url_for('index') }}" method="POST" class="calc-form">
             <div class="calc-inputs">
-                <input type="text" name="input_wallet" id="calc-input1" placeholder="Enter number">
-                <input type="text" name="rate" id="calc-input2" placeholder="Enter rate">
+                <input type="text" name="input_wallet" id="calc-input1" placeholder="Enter Token Contract Address">
             </div>
             <button type="submit" id="calc-btn">Calculate</button>
         </form>
