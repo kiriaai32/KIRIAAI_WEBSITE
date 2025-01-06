@@ -9,18 +9,19 @@ app.config['SECRET_KEY'] = 'your_secret_key'  # Replace with a secure secret key
 @app.route('/', methods=['GET', 'POST'])
 def index():
     result = None
+    string = ""
     if request.method == 'POST':
         try:
             result = random.randint(1,10)
             if result in range(1,5):
-                result = 'Bearish'
+                string = f'{result}-Bearish'
             elif result in range(5,8):
-                result = 'Neutral'
+                string = f'{result}-Neutral'
             else:
-                result = 'Bullish'
+                string = f'{result}-Bullish'
         except ValueError:
             result = "Please enter valid numbers."
-    return render_template('index.html', result=result)
+    return render_template('index.html', result=result, string=string)
 
 
 if __name__ == '__main__':
