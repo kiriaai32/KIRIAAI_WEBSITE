@@ -154,20 +154,8 @@
         </form>
         <div id="calc-output">
             {% if result %}
-                <p>Result: {{ string }}</p>
+                <p>{{ result }}</p>
             {% endif %}
-        </div>
-    </section>
-
-    <section id="video" class="section-3d py-5">
-        <div class="container text-center">
-            <h2 class="mb-4">Watch Our Overview Video</h2>
-            <div class="video-container">
-                <video width="100%" controls>
-                    <source src="{{ url_for('static', filename='video/kiria-video.mp4') }}" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
         </div>
     </section>
 
