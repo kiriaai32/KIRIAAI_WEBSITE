@@ -6,16 +6,21 @@ import random
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'your_secret_key'  # Replace with a secure secret key
 
+
 @app.route('/', methods=['GET', 'POST'])
 def index():
     result = None
     string = "We are still developing it. It is going to take some time"
+
     if request.method == 'POST':
-        try:
+        input_wallet = request.form.get('input_wallet', '').strip()
+
+        if len(input_wallet) == 44:
             result = string
-        except ValueError:
-            result = "Please enter valid numbers."
-    return render_template('index.html', result=result, string=string)
+        else:
+            result = "Invalid token address. Please enter exactly 44 characters."
+
+    return render_template('index.html', result=result)
 
 
 if __name__ == '__main__':
