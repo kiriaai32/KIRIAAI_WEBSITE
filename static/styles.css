@@ -65,7 +65,7 @@ header h1 {
     justify-content: center;
     min-height: 60vh;
     border-radius: 8px;
-    font-family: Papyrus, fantasy;
+    font-family: 'CustomPapyrus', fantasy, sans-serif;
 }
 
 .feature-image {
