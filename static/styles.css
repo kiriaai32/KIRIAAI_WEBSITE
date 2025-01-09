@@ -1,7 +1,7 @@
 /* Global Styles */
 body {
     margin: 0;
-    font-family: Papyrus, fantasy;
+    font-family: Papyrus, fantasy, sans-serif !important;
     background: url('/static/images/blackk.jpg') no-repeat center center fixed;
     background-size: cover;
     color: #E0E0E0;
@@ -30,7 +30,7 @@ header {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
     overflow: hidden;
     position: relative;
-    font-family: Papyrus, fantasy;
+    font-family: Papyrus, fantasy, sans-serif !important;
 }
 
 header::after {
@@ -97,7 +97,7 @@ section {
     background: transparent; /* Matches the background */
     border: none; /* Removes any borders */
     box-shadow: none; /* Removes box shadow */
-    font-family: Papyrus, fantasy;
+    font-family: Papyrus, fantasy, sans-serif !important;
 }
 
 section h2 {
