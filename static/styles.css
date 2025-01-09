@@ -1,7 +1,7 @@
 /* Global Styles */
 body {
     margin: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: Impact, Charcoal, sans-serif;
     background: url('/static/images/blackk.jpg') no-repeat center center fixed;
     background-size: cover;
     color: #E0E0E0;
@@ -30,6 +30,7 @@ header {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
     overflow: hidden;
     position: relative;
+    font-family: Papyrus, fantasy;
 }
 
 header::after {
@@ -60,6 +61,7 @@ header h1 {
     justify-content: center;
     min-height: 60vh;
     border-radius: 8px;
+    font-family: Papyrus, fantasy;
 }
 
 .feature-image {
@@ -95,6 +97,7 @@ section {
     background: transparent; /* Matches the background */
     border: none; /* Removes any borders */
     box-shadow: none; /* Removes box shadow */
+    font-family: Papyrus, fantasy;
 }
 
 section h2 {
@@ -174,6 +177,7 @@ footer {
     color: #E0E0E0;
     position: relative;
     overflow: hidden;
+    font-family: Papyrus, fantasy;
 }
 
 footer::after {
