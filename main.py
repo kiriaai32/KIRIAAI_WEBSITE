@@ -18,7 +18,7 @@ def index():
         if len(input_wallet) == 44:
             result = string
         else:
-            result = "Invalid token address. Please enter exactly 44 characters."
+            result = "Invalid token address"
 
     return render_template('index.html', result=result)
 
